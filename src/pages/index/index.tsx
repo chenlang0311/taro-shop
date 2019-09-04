@@ -4,6 +4,7 @@ import './index.scss'
 import  IndexListItem from '../../components/IndexListItem'
 import  Clock from '../../components/Clock'
 import  {User} from '../../services/index'
+import  {goods} from '../../mock/index'
 export default class Index extends Component {
 
   /**
@@ -19,6 +20,7 @@ export default class Index extends Component {
 
   componentWillMount () {
     this.getData()
+    console.log("goods",goods)
   }
 
   componentDidMount () { }
