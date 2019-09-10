@@ -43,6 +43,12 @@ export default class Index extends Component {
   render () {
     let time =1234;
     let adImg = "https://oss-image.dfs168.com/aimages/20190905/8eb75335821cc6bc06802cec423d7eda.jpg"
+    let indexList =[1,2,3,4]
+    let indexItem = indexList.map((item) => {
+      return (
+        <IndexListItem />
+      )
+    })
     return (
       <View className='index'>
         <CSwiper  time={time}/>
@@ -50,7 +56,10 @@ export default class Index extends Component {
             <Image src={adImg} className="indexAd_img"></Image>
         </View>
         <TabNav />
-        <IndexListItem />
+        <View className="index_list">
+          {indexItem}
+        </View>
+        
         <Clock time={time}/>
         <Text data-id={time} onClick={this.toDetail}>Hello world!</Text>
       </View>

@@ -3,7 +3,16 @@
 }
 .indexAd_img{
     display: block;
-height: 180rpx;
-width: 702rpx;
-margin: 20rpx auto 0;
+    height: 180rpx;
+    width: 702rpx;
+    margin: 20rpx auto 0;
+}
+.index_list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 24rpx;
+
 }
