@@ -1,0 +1,43 @@
+.home_nav{
+    display: flex;
+width: 100%;
+background: #fff;
+justify-content: flex-start;
+margin-top: 20rpx;
+flex-wrap: wrap;
+
+}
+.nav_item{
+    flex: 1;
+height: 143rpx;
+background: #fff;
+margin-left: 17rpx;
+margin-top: 24rpx;
+line-height: 40rpx;
+padding: 0 28rpx;
+border-radius: 20rpx;
+margin-right: 16rpx;
+float: left;
+white-space: nowrap;
+
+}
+.cc_img {
+    width: 80rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    margin-bottom: 16rpx;
+  }
+  .cc_agricultural_img{
+      height: 80rpx;
+      width: 80rpx;
+  }
+  .cc_agricultural{
+    height: 23rpx;
+    font-family: PingFang-SC;
+    font-size: 24rpx;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    text-align: center;
+    color: #444;    
+  }

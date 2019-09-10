@@ -1,10 +1,9 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Text,Image } from '@tarojs/components'
 import './index.scss'
-import  IndexListItem from '../../components/IndexListItem'
-import  Clock from '../../components/Clock'
-import  {User} from '../../services/index'
-import  {goods} from '../../mock/index'
+import  {CSwiper,Clock,IndexListItem,TabNav} from '../../components'
+import  {User} from '../../services'
+import  {goods} from '../../mock'
 export default class Index extends Component {
 
   /**
@@ -35,13 +34,25 @@ export default class Index extends Component {
       console.log(res)
     })
   }
+  toDetail(e){
+    let id = e.currentTarget.dataset.id
+    Taro.navigateTo({
+      url:"/pages/detail/detail?id="+ id
+    })
+  }
   render () {
-    let time =1234
+    let time =1234;
+    let adImg = "https://oss-image.dfs168.com/aimages/20190905/8eb75335821cc6bc06802cec423d7eda.jpg"
     return (
       <View className='index'>
+        <CSwiper  time={time}/>
+        <View className="indexAd">
+            <Image src={adImg} className="indexAd_img"></Image>
+        </View>
+        <TabNav />
         <IndexListItem />
         <Clock time={time}/>
-        <Text>Hello world!</Text>
+        <Text data-id={time} onClick={this.toDetail}>Hello world!</Text>
       </View>
     )
   }
