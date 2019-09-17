@@ -2,7 +2,7 @@ import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text,Image } from '@tarojs/components'
 import './index.scss'
 import  {CSwiper,Clock,IndexListItem,TabNav} from '../../components'
-import  {User} from '../../services'
+import  Api from '../../services'
 import  {goods} from '../../mock'
 export default class Index extends Component {
 
@@ -19,6 +19,7 @@ export default class Index extends Component {
 
   componentWillMount () {
     this.getData()
+    this.getSwiper();
     console.log("goods",goods)
   }
 
@@ -30,14 +31,24 @@ export default class Index extends Component {
 
   componentDidHide () { }
   getData () {
-    User.getUserDetailDao().then(res=>{
-      console.log(res)
-    })
+    // Api.User.getUserDetailDao().then(res=>{
+    //   console.log(res)
+    // })
   }
   toDetail(e){
     let id = e.currentTarget.dataset.id
     Taro.navigateTo({
       url:"/pages/detail/detail?id="+ id
+    })
+  }
+  getSwiper(){
+    let opt ={
+      page:1,
+      count:10,
+      timestamp:new Date().getTime()
+    }
+    Api.Swiper.getSwiper(opt).then(res=>{
+      console.log(res)
     })
   }
   render () {

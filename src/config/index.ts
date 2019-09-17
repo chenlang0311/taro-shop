@@ -9,9 +9,10 @@ export const globalData = {
     // API_URL: 'http://www.5gfd.cl/applite/V1',
     // API_URL: 'http://192.168.5.23/applite/V1',
     // API_URL: "http://testwww.dfs168.com/applite/V1",
-      API_URL: "https://www.dfs168.com/applite/V1",
+      // API_URL: "https://www.dfs168.com/applite/V1",
     // API_URL: 'http://192.168.5.58/applite/V1',
     // API_URL: 'http://192.168.5.239/applite/V1',
+    API_URL:  'https://77dress.cn',
     API_KEY: 'fdsfFfdffd144FerrFGGG',
     // API_URL:'http://192.168.5.45/applite/V1',
   }

@@ -1,3 +1,7 @@
 import  User  from "./user"
-
-export {User}
+import  Swiper  from "./swiper"
+let Api ={
+    User,
+    Swiper
+}
+export default Api
