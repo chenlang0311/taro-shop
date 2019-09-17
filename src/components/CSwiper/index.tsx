@@ -36,7 +36,7 @@ export default class CSwiper extends Component <Props, {}>{
       "https://oss-image.dfs168.com/aimages/20190905/8eb75335821cc6bc06802cec423d7eda.jpg"];
     const swiperItems =swiperList.map((swiperItem)=>{
       return(
-        <SwiperItem>
+        <SwiperItem key={swiperItem}>
            <View className='my_swiper_item'>
               <Image src={swiperItem} className="swiper_img"></Image>
           </View>
@@ -44,7 +44,6 @@ export default class CSwiper extends Component <Props, {}>{
       )
     }) 
     return (
-      <View>
         <Swiper 
         indicatorDots
         indicatorActiveColor='#5db524'
@@ -56,8 +55,6 @@ export default class CSwiper extends Component <Props, {}>{
         >
           {swiperItems}
         </Swiper>
-        
-      </View>
     );
   }
 }

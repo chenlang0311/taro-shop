@@ -46,7 +46,7 @@ export default class Index extends Component {
     let indexList =[1,2,3,4]
     let indexItem = indexList.map((item) => {
       return (
-        <IndexListItem />
+        <IndexListItem key={item}/>
       )
     })
     return (

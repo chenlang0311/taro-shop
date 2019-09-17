@@ -28,7 +28,7 @@ export default class TabNav extends Component<Props, {}> {
         }]
         let nav = navList.map((navItem)=>{
             return (
-                <View className="nav_item">
+                <View className="nav_item" key={navItem.title}>
                     <View className="cc_img">
                         <Image className="cc_agricultural_img" src={navItem.image}></Image>
                     </View>
