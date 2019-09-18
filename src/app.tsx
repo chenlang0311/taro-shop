@@ -22,6 +22,7 @@ class App extends Component {
     pages: [
       'pages/index/index',
       'pages/detail/detail',
+      'pages/order/index',
       'pages/my/my'
     ],
     window: {

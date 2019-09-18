@@ -1,22 +1,20 @@
+// @import '../../app.scss';
 .list_ul_li {
   width: 343rpx;
   height: 494rpx;
 //   margin-right: 16rpx;
   margin-bottom: 16rpx;
-  background-color: #f9f9f9;
+  background-color: #fff;
   border-radius: 8rpx;
 }
 .goods_img_wrap {
   position: relative;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  @include flex-center;
   width: 343rpx;
   height: 343rpx;
-  background-color: #f1f1f1;
+  background-color: #fff;
   border-radius: 8rpx 8rpx 0 0;
 }
 .v2_goods_img {
@@ -47,4 +45,8 @@
 }
 .v2_goods_price_des {
   font-size: 34rpx;
+}
+.v2_goods_price .icon-jinbi{
+  font-size: 24rpx;
+  margin-left: 8rpx;
 }

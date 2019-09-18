@@ -36,7 +36,8 @@ export default class Index extends Component {
     // })
   }
   toDetail(e){
-    let id = e.currentTarget.dataset.id
+    console.log(e)
+    let id = e.currentTarget.dataset.id||e.target.dataset.id
     Taro.navigateTo({
       url:"/pages/detail/detail?id="+ id
     })
@@ -57,7 +58,7 @@ export default class Index extends Component {
     let indexList =[1,2,3,4]
     let indexItem = indexList.map((item) => {
       return (
-        <IndexListItem key={item}/>
+        <IndexListItem key={item} data-id={item}/>
       )
     })
     return (
@@ -67,12 +68,11 @@ export default class Index extends Component {
             <Image src={adImg} className="indexAd_img"></Image>
         </View>
         <TabNav />
-        <View className="index_list">
+        <View className="index_list"  onClick={this.toDetail}>
           {indexItem}
         </View>
-        
-        <Clock time={time}/>
-        <Text data-id={time} onClick={this.toDetail}>Hello world!</Text>
+        {/* <Clock time={time}/> */}
+        {/* <Text data-id={time} onClick={this.toDetail}>Hello world!</Text> */}
       </View>
     )
   }

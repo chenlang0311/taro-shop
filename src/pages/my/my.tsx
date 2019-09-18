@@ -1,6 +1,6 @@
 import Taro, { Component, Config } from "@tarojs/taro";
 import { View, Label, OpenData, Image } from "@tarojs/components";
-
+import './my.scss'
 export default class My extends Component {
   config: Config = {
     navigationBarTitleText: "我的"

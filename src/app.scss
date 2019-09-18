@@ -1,0 +1,30 @@
+@font-face {font-family: "iconfont";
+    src: url('//at.alicdn.com/t/font_1420885_vgv8zhqwnj9.eot?t=1568774348455'); /* IE9 */
+    src: url('//at.alicdn.com/t/font_1420885_vgv8zhqwnj9.eot?t=1568774348455#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAALMAAsAAAAABnwAAAJ9AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqBCIEaATYCJAMICwYABCAFhG0HLxu/BciemjwpAiwLawS4ADAIEDz97/f7PefMRS2JaDSJopKIJPEEJeClwOrEpxHx/EXv/q9tiJa01++wSDJNnk/2T3w37HVaJiUeIUFohEgDBJiZL9jcP+6n/tjOozAfyOYSERSV/Gk3wHHrALtwTbaBDH3D2AUu4TwEiCCdptDWsdlDHcWaJoCsrzgG1HNBFGWZMISQmrWKnOIQZo7NPcBJ+H35olcYGByLVdO9qQ2Dx9k5dsvdYtxHCIGANjuABUoBCtJfm+xUQhitRIRwmWyAopHXONfFDmSvVoT9dVZ5FACpUHZPcldxq+UGAIX9mYCWUY8GjYpSnfG9DvrfhrwvA57nTY+n3+sd8PuHfL7xRYfMw+n4v/ud9HTHb7PTM/wq9mVpbXr07vGNPjyoR7l+eJynj4/22t48PtxITk1Ndo+/0/Orq7Oza5oA4B7YP3YLAfCTn81D76nYum9hkQpA8PJ96HcPlH5uCDuBS+BHyXvWqa60jOaQMuQyZGb8GIAS7sHF8ib4jjUl31VWCCP53tyhpKVgCSMXVXIpOERSCyGE0QgRlJhvjiQRKyEaDhR7ABDiPMEQwy1Y4rxQJX/AIcUPQojLQgSDJe4ZSX4rEa0bZAjZaN7Rs5JYOU5pRpVbcs6hwVllyDkS514Eu+WVxcycYuI5FuQXpyeiUHES4QxcRmGYYMqJT5a0XJG0365YrHtTy0oiaNKKEYMgNmS6Qx5LIqb85qJZ+vwWcZyFDNxCqIkeEZbzBkddLZ0e6FwX9yLcyzW5C0ePEApSWCKCZmAUCYUSKK0f5SMW0eKOiKf62nYj1VfXWt8Qfd0WIALLbMQeYnFWV2LTAwAAAAA=') format('woff2'),
+    url('//at.alicdn.com/t/font_1420885_vgv8zhqwnj9.woff?t=1568774348455') format('woff'),
+    url('//at.alicdn.com/t/font_1420885_vgv8zhqwnj9.ttf?t=1568774348455') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('//at.alicdn.com/t/font_1420885_vgv8zhqwnj9.svg?t=1568774348455#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-jinbi:before {
+    content: "\e610";
+  }
+  page{
+    background-color: #f4f4f4;
+}
+@mixin flex-center {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  
